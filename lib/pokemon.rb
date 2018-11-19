@@ -1,3 +1,5 @@
+require 'pry'
+
 class Pokemon
   @@all = []
 
@@ -27,3 +29,5 @@ class Pokemon
   end
 
 end
+
+binding.pry
