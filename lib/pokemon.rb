@@ -5,8 +5,12 @@ class Pokemon
 
   attr_accessor :id, :name, :type, :db, :hp
 
-  def initialize(keywords)
-    keywords.each {|attribute, value| self.send("#{attribute}=", value)}
+  def initialize(id:, :name, :type, :db, :hp = 60)
+    @id = id
+    @name = name
+    @type = type
+    @db = db
+    @hp = hp
     @@all << self
   end
 
